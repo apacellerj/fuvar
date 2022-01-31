@@ -60,6 +60,11 @@ namespace fuvar
                     stat.Add(f.FizetésMód, 1);
                 }
 	        }
+            Console.WriteLine($"5. feladat: ");
+            foreach (var s in stat)
+	        {
+                Console.WriteLine($"\t{s.Key}: {s.Value} fuvar");
+	        }
 
             Console.ReadKey();
         }

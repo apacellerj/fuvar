@@ -26,7 +26,7 @@ namespace fuvar
         {
             string[] t = sor.Split(';');
             TaxiID = int.Parse(t[0]);
-            Indulás = DateTime.Parse(t[1]);
+            Indulás = t[1];
             Időtartam = int.Parse(t[2]);
             Távolság = double.Parse(t[3]);
             Viteldíj = double.Parse(t[4]);
