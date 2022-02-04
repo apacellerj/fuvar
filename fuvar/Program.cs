@@ -66,6 +66,16 @@ namespace fuvar
                 Console.WriteLine($"\t{s.Key}: {s.Value} fuvar");
 	        }
 
+            //6. feladat
+            double ÖsszM = 0;
+            foreach (var f in fuvarok)
+            {
+             
+                ÖsszM += f.Távolság;
+            }
+            Console.WriteLine($"6. feladat: {ÖsszM*1.6:0.00km}");
+
+
             Console.ReadKey();
         }
     }
